@@ -1,0 +1,121 @@
+.header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: white;
+  border-bottom: 1.5px solid black;
+  position: fixed;
+  z-index: 100;
+}
+.logo {
+  display: flex;
+  width: 30%;
+
+  justify-content: left;
+}
+.logo img {
+  width: 200px;
+}
+.navto {
+  display: flex;
+  justify-content: space-between;
+  width: 40%;
+  list-style: none;
+}
+.navto:hover {
+  cursor: pointer;
+}
+.el {
+  text-decoration: none;
+  color: orange;
+}
+.signup {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 20%;
+  list-style: none;
+}
+.el li {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+}
+.el:active {
+  color: black;
+}
+.signup > :nth-child(1) {
+  background-color: black;
+  padding: 10px;
+  font-size: 13px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  border-radius: 4px;
+}
+.register {
+  background-color: orange;
+  padding: 10px;
+  font-size: 13px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+  font-weight: bold;
+  border-radius: 4px;
+}
+.bars {
+  visibility: hidden;
+}
+@media (max-width: 800px) {
+}
+@media (max-width: 600px) {
+  .header {
+    justify-content: space-between;
+    width: 100%;
+    height: 50px;
+    position: fixed;
+  }
+  .logo {
+    display: flex;
+    width: 50%;
+  }
+  .logo img {
+    width: 130px;
+  }
+  .bars {
+    visibility: visible;
+  }
+  .navto {
+    flex-direction: column;
+    margin-top: 213px;
+    gap: 20px;
+    background-color: orange;
+    position: absolute;
+    right: 0;
+    margin-right: -200px;
+    transition: 0.5s;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .navto li {
+    color: black;
+  }
+  .signup {
+    width: 40%;
+    justify-content: left;
+    gap: 10px;
+  }
+  .signup > .el > :nth-child(1) {
+    font-size: 10px;
+    padding: 0px;
+  }
+  .register {
+    padding: 9px;
+    font-size: 13px;
+  }
+  .navtoo {
+    margin-right: 0px;
+  }
+}

@@ -1,0 +1,159 @@
+.Tourdetails {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  margin-top: 80px;
+  justify-content: center;
+  height: 100%;
+}
+.Tourdetails h1 {
+  font-size: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: italic;
+  border-bottom: 1.5px solid black;
+  margin-bottom: 30px;
+}
+.tourde {
+  display: flex;
+  width: 95%;
+  gap: 50px;
+  flex-direction: column;
+}
+.userdata {
+  display: flex;
+  gap: 40px;
+}
+.userBookings {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.userBookings h2 {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.userBookings h2 span {
+  font-size: 14px;
+}
+.userBookings h3 {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.userBookings > :nth-child(1) {
+  display: flex;
+  align-items: center;
+  gap: 100px;
+}
+.userBookings > :nth-child(3) {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border: 1px solid black;
+  padding: 20px;
+}
+.userBookings > :nth-child(3) input {
+  border: 0;
+  outline: 0;
+  padding: 5px;
+  border: 1.5px solid orange;
+}
+.userBookings > :nth-child(3) > :nth-child(3) {
+  display: flex;
+  gap: 10px;
+}
+.calc {
+  border: 1px solid black;
+}
+.calc h3 {
+  margin: 5px;
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.calc span {
+  margin: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.userdata > :nth-child() {
+  display: flex;
+  flex-direction: column;
+}
+.userdata img {
+  width: 700px;
+  border-radius: 10px;
+}
+.tourname {
+  display: flex;
+  flex-direction: column;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.tourname h4 {
+  font-size: 30px;
+  margin: 0;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+.underdiv {
+  display: flex;
+  flex-direction: column;
+  border: 1.5px solid orange;
+  padding: 20px;
+  gap: 20px;
+  font-size: 14px;
+}
+.tourrating {
+  display: flex;
+  gap: 100px;
+  font-weight: bold;
+}
+.location {
+  display: flex;
+  gap: 80px;
+  font-weight: bold;
+}
+.rat {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.description span {
+  font-family: cursive;
+}
+.booking {
+  margin-top: 20px;
+  height: 30px;
+  background-color: orange;
+  border: 0;
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 12px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.booking:hover {
+  background-color: darkorange;
+  cursor: pointer;
+}
+@media (max-width: 600px) {
+  .Tourdetails {
+    margin-top: 70px;
+    align-items: start;
+    justify-content: left;
+  }
+  .Tourdetails h1 {
+    font-size: 20px;
+  }
+  .userdata {
+    flex-direction: column;
+  }
+  .userdata img {
+    width: 350px;
+    border-radius: 10px;
+  }
+  .tourrating {
+    gap: 80px;
+  }
+  .location {
+    gap: 50px;
+  }
+}
